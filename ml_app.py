@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from PIL import Image
 import joblib
 
 def run_ml_app():
@@ -9,13 +10,14 @@ def run_ml_app():
     scaler_X = joblib.load('data/scaler_X.pkl')
     df = pd.read_csv('data/penguins.csv', encoding='ISO-8859-1', index_col=0)
     st.title('펭귄 성별 예측하기')
+    couple = Image.open('img/couple_penguins.jpg')
+
+    st.image(couple,width=700)
+
 
     # species	island	culmen_length_mm	culmen_depth_mm	
     # flipper_length_mm	body_mass_g	sex
 
-
-    # species = st.text_input('펭귄 종 입력하기 (Chinstrap, Adelie, 또는 Gentoo)')
-    # island = st.text_input('남극 섬 입력하기 (Dream, Torgersen, 또는 Biscoe)')
     culmen_length = st.number_input('부리 길이 입력하기( 단위 mm )',min_value=32, max_value=60)
     culmen_depth = st.number_input('부리 깊이 입력하기( 단위 mm )',min_value=13, max_value=22)
     flipper_length = st.number_input('지느러미 길이( 단위 mm )',min_value=170, max_value=240)

@@ -10,12 +10,12 @@ from main import run_main_app
 from ml_app import run_ml_app
 
 def main():
-    menu = ['펭귄','Data EDA','펭귄의 성별 예측하기' ]
+    menu = ['펭귄','펭귄 데이터 분석하기','펭귄의 성별 예측하기' ]
     choice = st.sidebar.selectbox('메뉴 선택',menu)
 
     if choice == '펭귄':
         run_main_app()
-    elif choice == 'Data EDA':
+    elif choice == '펭귄 데이터 분석하기':
         run_eda_app()
 
     elif choice == '펭귄의 성별 예측하기':
