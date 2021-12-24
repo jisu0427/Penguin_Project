@@ -6,6 +6,9 @@ import seaborn as sns
 
 def run_eda_app():
     st.markdown('# 남극 펭귄들 데이터 분석하기')
+    video_file = open('img/Penguin_1.mov','rb')
+    st.video(video_file)
+
 
     ### Data colums Markdown syntax ###
     st.subheader('데이터 컬럼명 설명')
