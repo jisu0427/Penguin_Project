@@ -7,10 +7,10 @@ import joblib
 
 from eda_app import run_eda_app
 from main import run_main_app
-from search_app import run_search_app
+from ml_app import run_ml_app
 
 def main():
-    menu = ['펭귄','Data EDA','검색하기' ]
+    menu = ['펭귄','Data EDA','펭귄의 성별 예측하기' ]
     choice = st.sidebar.selectbox('메뉴 선택',menu)
 
     if choice == '펭귄':
@@ -18,8 +18,8 @@ def main():
     elif choice == 'Data EDA':
         run_eda_app()
 
-    elif choice == '검색하기':
-        run_search_app()
+    elif choice == '펭귄의 성별 예측하기':
+        run_ml_app()
 
 
 
