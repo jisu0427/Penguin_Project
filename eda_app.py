@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def run_eda_app():
-    st.markdown('# Palmer Penguins Data EDA')
+    st.markdown('# 남극 펭귄들 데이터 분석하기')
 
     ### Data colums Markdown syntax ###
     st.subheader('데이터 컬럼명 설명')

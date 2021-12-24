@@ -4,10 +4,20 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
+from PIL import Image
 
 from eda_app import run_eda_app
 from main import run_main_app
 from ml_app import run_ml_app
+
+
+#  파비콘 넣기
+favicon = Image.open('img/favicon.ico')
+st.set_page_config(page_title='Palmer Penguins ML',page_icon=favicon, layout='wide',initial_sidebar_state='collapsed')
+
+
+
+
 
 def main():
     menu = ['펭귄','펭귄 데이터 분석하기','펭귄의 성별 예측하기' ]

@@ -5,14 +5,22 @@ import seaborn as sns
 from PIL import Image
 import joblib
 
+from bs4 import BeautifulSoup
+import requests
+
+
+
 def run_ml_app():
     classifier = joblib.load('data/best_model.pkl')
     scaler_X = joblib.load('data/scaler_X.pkl')
     df = pd.read_csv('data/penguins.csv', encoding='ISO-8859-1', index_col=0)
     st.title('펭귄 성별 예측하기')
+
+    image_style = { 'width':'80%' }
+
     couple = Image.open('img/couple_penguins.jpg')
 
-    st.image(couple,width=700)
+    st.image(couple)
 
 
     # species	island	culmen_length_mm	culmen_depth_mm	
