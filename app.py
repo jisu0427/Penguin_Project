@@ -21,15 +21,15 @@ st.set_page_config(page_title='Palmer Penguins ML',page_icon=emojis, layout='wid
 
 
 def main():
-    menu = ['펭귄','펭귄 데이터 분석하기','펭귄의 성별 예측하기' ]
+    menu = ['펭귄🐧','펭귄🐧 데이터 분석하기','펭귄🐧의 성별 예측하기' ]
     choice = st.sidebar.selectbox('메뉴 선택',menu)
 
-    if choice == '펭귄':
+    if choice == '펭귄🐧':
         run_main_app()
-    elif choice == '펭귄 데이터 분석하기':
+    elif choice == '펭귄🐧 데이터 분석하기':
         run_eda_app()
 
-    elif choice == '펭귄의 성별 예측하기':
+    elif choice == '펭귄🐧의 성별 예측하기':
         run_ml_app()
 
 
