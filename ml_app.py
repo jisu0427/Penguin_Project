@@ -16,11 +16,10 @@ def run_ml_app():
     df = pd.read_csv('data/penguins.csv', encoding='ISO-8859-1', index_col=0)
     st.title('펭귄 성별 예측하기')
 
-    image_style = { 'width':'80%' }
 
     couple = Image.open('img/couple_penguins.jpg')
 
-    st.image(couple)
+    st.image(couple, width=700)
 
 
     # species	island	culmen_length_mm	culmen_depth_mm	

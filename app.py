@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
 from PIL import Image
+import random
 
 from eda_app import run_eda_app
 from main import run_main_app
@@ -12,8 +13,8 @@ from ml_app import run_ml_app
 
 
 #  파비콘 넣기
-favicon = Image.open('img/favicon.ico')
-st.set_page_config(page_title='Palmer Penguins ML',page_icon=favicon, layout='wide',initial_sidebar_state='collapsed')
+emojis = "🐧"
+st.set_page_config(page_title='Palmer Penguins ML',page_icon=emojis, layout='wide',initial_sidebar_state='collapsed')
 
 
 
