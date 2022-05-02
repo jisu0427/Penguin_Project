@@ -15,6 +15,11 @@ def run_ml_app():
     scaler_X = joblib.load('data/scaler_X.pkl')
     df = pd.read_csv('data/penguins.csv', encoding='ISO-8859-1', index_col=0)
     st.title('펭귄 성별 예측하기')
+    # 빈 데이터 보여준 후
+
+    # fillna(평균)으로 채운거 말하기
+
+    # sex 부분은 FEMALE로 채웠다.
 
 
     couple = Image.open('img/couple_penguins.jpg')
