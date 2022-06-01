@@ -5,9 +5,6 @@ import seaborn as sns
 from PIL import Image
 import joblib
 
-from bs4 import BeautifulSoup
-import requests
-
 
 
 def run_ml_app():
