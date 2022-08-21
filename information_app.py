@@ -7,4 +7,4 @@ def run_information_app():
     st.markdown('https://www.kaggle.com/code/parulpandey/penguin-dataset-the-new-iris/data')
     # 2. 내 깃허브 주소
     st.subheader('내 깃허브 주소')
-    st.markdown('https://github.com/jisu0427/My_Project')
+    st.markdown('https://github.com/jisu0427/Penguin_Project')
